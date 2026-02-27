@@ -1,105 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <title>Projets – Mael BRAULT</title>
-    <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
 
 <header>
-    <a href="./index.html"><img src="./images/flashhh.jpg" class="logo"></a>
+    <a href="./index.html">
+        <img src="./images/flashhh.jpg" class="logo">
+    </a>
     <h1>PROJETS</h1>
     <h2>Mael BRAULT</h2>
 
     <nav>
         <a href="./index.html">Accueil</a>
         <a href="./propos.html">À propos</a>
-        
+        <a href="./competences.html">Compétences</a>
+        <a href="./parcours.html">Parcours</a>
+        <a href="./projets.html" class="page_active">Projets</a>
+        <a href="./interets.html">Centres d’intérêt</a>
     </nav>
 </header>
 
 <main>
-<section class="content">
-    <h1>Mes projets</h1>
+<section class="section">
+    <h1>Mes Projets</h1>
 
-    <div class="projet">
-        <h2>Création d'un jeu vidéo 2D (effet 3D) – C++</h2>
-        <ul>
-            <li><strong>Situation :</strong> projet scolaire</li>
-            <li><strong>Tâche :</strong> créer un programme simple</li>
-            <li><strong>Actions :</strong> utilisation de C++</li>
-            <li><strong>Résultat :</strong> programme fonctionnel</li>
-        </ul><br>
-        <p>Compétences : <span class="tag">C++ orienté objet</span> <span class="tag">Gitlab</span> <span class="tag">Code::Blocks</span></p>
+    <div class="projects-grid">
+
+        <div class="project">
+            <h2>🎮 Jeu vidéo 2D – C++</h2>
+            <p>Projet scolaire avec programmation orientée objet.</p>
+            <div class="tags">
+                <span>C++</span>
+                <span>POO</span>
+                <span>GitLab</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>🌐 Site web – HTML/CSS</h2>
+            <p>Création d’un site d’agence de voyage interactif.</p>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>VS Code</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>🗄 Base de données – SQL</h2>
+            <p>Conception d’une base relationnelle et requêtes complexes.</p>
+            <div class="tags">
+                <span>SQL</span>
+                <span>SQLite</span>
+            </div>
+        </div>
+
     </div>
-
-    <div class="projet">
-        <h2>Création d'un site internet – HTML/CSS</h2>
-        <ul>
-            <li><strong>Situation :</strong> projet scolaire</li>
-            <li><strong>Tâche :</strong> créer un site internet d'agence de voyage (reservations, présentation des voyages...)</li>
-            <li><strong>Actions :</strong> utilisation de HTML & CSS</li>
-            <li><strong>Résultat :</strong> Site internet fonctionnel avec des actions instinctives</li>
-        </ul><br>
-        <p>Compétences : <span class="tag">CSS</span> <span class="tag">HTML</span> <span class="tag">VSCode</span></p>
-    </div>
-
-    <div class="projet">
-        <h2>Création d'une base de Donnée – SQL</h2>
-        <ul>
-            <li><strong>Situation :</strong> projet scolaire</li>
-            <li><strong>Tâche :</strong> créer d'une base de donnée et de requètes SQL associées</li>
-            <li><strong>Actions :</strong> utilisation de SQL</li>
-            <li><strong>Résultat :</strong> Base de donnée complète avec des requètes simple et complexe fonctionnelles</li>
-        </ul><br>
-        <p>Compétences : <span class="tag">SQL developer</span> <span class="tag">Language SQL</span> <span class="tag">SQLite</span></p>
-    </div>
-
 </section>
 </main>
 
-<!-- FOOTER -->
-    <footer>
-        <div class="bas_de_page">
-
-            <!-- MAP -->
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.47643427535!2d2.181898515832966!3d48.701760979272705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67c242234cb47%3A0x6df6c6c713947401!2sIUT%20d'Orsay%20-%20Universit%C3%A9%20Paris-Saclay!5e0!3m2!1sfr!2sfr!4v1700000000000"
-                    allowfullscreen=""
-                    loading="lazy"></iframe>
-            </div>
-
-            <!-- CONTACT -->
-            <div class="info">
-                <div>
-                    <h3>Me trouver</h3>
-                    <address>
-                        IUT d’Orsay – Université Paris-Saclay<br>
-                        13 Av. des Sciences, 91190 Gif-sur-Yvette
-                    </address>
-                </div>
-
-                <h3>Me contacter</h3>
-                <div class="réseaux">
-                    <a href="#" class="icone"><img src="./images/facebook.png"></a>
-                    <a href="#" class="icone"><img src="./images/instagram.png"></a>
-                    <a href="#" class="icone"><img src="./images/whatsapp.png"></a>
-                </div>
-            </div>
-
-        </div>
-
-        <p class="copyright">
-            © 2025 Portfolio – Mael BRAULT<br><br>
-            <a href="https://www.iut-orsay.universite-paris-saclay.fr/">
-                <img src="./images/LogoIUT.jpg" alt="iut">
-            </a>
-        </p>
-    </footer>
+<footer>
+    <p class="copyright">© 2025 Mael BRAULT</p>
+</footer>
 
 </body>
 </html>

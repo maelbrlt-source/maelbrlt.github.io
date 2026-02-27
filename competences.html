@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <title>Compétences – Mael BRAULT</title>
-    <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
 
 <header>
-    <a href="./index.html"><img src="./images/flashhh.jpg" class="logo"></a>
+    <a href="./index.html">
+        <img src="./images/flashhh.jpg" class="logo">
+    </a>
     <h1>COMPÉTENCES</h1>
     <h2>Mael BRAULT</h2>
 
     <nav>
         <a href="./index.html">Accueil</a>
         <a href="./propos.html">À propos</a>
-        
+        <a href="./competences.html" class="page_active">Compétences</a>
+        <a href="./parcours.html">Parcours</a>
+        <a href="./projets.html">Projets</a>
+        <a href="./interets.html">Centres d’intérêt</a>
     </nav>
 </header>
 
 <main>
-<section class="content">
-    <h1>Mes compétences</h1>
+<section class="section">
+    <h1>Mes Compétences</h1>
 
-    <h2>Compétences informatiques</h2>
-    <ul>
-        <li>HTML / CSS (débutant +)</li>
-        <li>Python (MPSI)</li>
-        <li>C++ (POO)</li>
-        <li>Java (POO)</li>
-        <li>Linux (commandes de base)</li>
-        <li>Git / GitHub / Gitlab</li>
-        <li>Notions de réseaux (SQL)</li>
-    </ul>
+    <div class="grid">
 
-    <h2>Compétences linguistiques</h2>
-    <ul>
-        <li>Français — C2</li>
-        <li>Anglais — C1</li>
-        <li>Allemand — B1/B2 </li>
-    </ul>
+        <div class="card">
+            <h2>💻 Informatique</h2>
+
+            <div class="skill-line">
+                <span>HTML / CSS</span>
+                <span class="level">Intermédiaire</span>
+            </div>
+
+            <div class="skill-line">
+                <span>Python</span>
+                <span class="level">Bases solides</span>
+            </div>
+
+            <div class="skill-line">
+                <span>C++</span>
+                <span class="level">POO</span>
+            </div>
+
+            <div class="skill-line">
+                <span>Java</span>
+                <span class="level">POO</span>
+            </div>
+
+            <div class="tags">
+                <span>Linux</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>SQL</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🌍 Langues</h2>
+
+            <div class="skill-line">
+                <span>Français</span>
+                <span class="level">C2</span>
+            </div>
+
+            <div class="skill-line">
+                <span>Anglais</span>
+                <span class="level">C1</span>
+            </div>
+
+            <div class="skill-line">
+                <span>Allemand</span>
+                <span class="level">B1/B2</span>
+            </div>
+        </div>
+
+    </div>
 </section>
 </main>
 
-<!-- FOOTER -->
-    <footer>
-        <div class="bas_de_page">
-
-            <!-- MAP -->
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.47643427535!2d2.181898515832966!3d48.701760979272705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67c242234cb47%3A0x6df6c6c713947401!2sIUT%20d'Orsay%20-%20Universit%C3%A9%20Paris-Saclay!5e0!3m2!1sfr!2sfr!4v1700000000000"
-                    allowfullscreen=""
-                    loading="lazy"></iframe>
-            </div>
-
-            <!-- CONTACT -->
-            <div class="info">
-                <div>
-                    <h3>Me trouver</h3>
-                    <address>
-                        IUT d’Orsay – Université Paris-Saclay<br>
-                        13 Av. des Sciences, 91190 Gif-sur-Yvette
-                    </address>
-                </div>
-
-                <h3>Me contacter</h3>
-                <div class="réseaux">
-                    <a href="#" class="icone"><img src="./images/facebook.png"></a>
-                    <a href="#" class="icone"><img src="./images/instagram.png"></a>
-                    <a href="#" class="icone"><img src="./images/whatsapp.png"></a>
-                </div>
-            </div>
-
-        </div>
-
-        <p class="copyright">
-            © 2025 Portfolio – Mael BRAULT<br><br>
-            <a href="https://www.iut-orsay.universite-paris-saclay.fr/">
-                <img src="./images/LogoIUT.jpg" alt="iut">
-            </a>
-        </p>
-    </footer>
+<footer>
+    <p class="copyright">© 2025 Mael BRAULT</p>
+</footer>
 
 </body>
 </html>
