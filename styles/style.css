@@ -23,6 +23,7 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     background: var(--bg);
+    
     color: var(--text-dark);
 }
 
@@ -75,6 +76,7 @@ nav a {
 nav a:hover, nav a.page_active {
     background: var(--accent);
     border-color: var(--accent);
+    color : var(--text-light);
 }
 
 /* MAIN */
@@ -108,6 +110,23 @@ main {
 }
 .card:hover {
     transform: translateY(-8px);
+}
+.btn-nav {
+    text-decoration: none;
+    color: var(--text-light);
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-nav:hover {
+    background: var(--accent);
+    border-color: var(--accent);
 }
 
 /* SKILLS */
@@ -220,7 +239,36 @@ footer .copyright {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .grid, .projects-grid {
+  
+    header {
+        padding: 1.5rem 1rem 2rem 1rem;
+    }
+
+    .logo {
+        position: static;   /* enlève le absolute */
+        display: block;
+        margin: 0 auto 15px auto; /* centre le logo */
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+      .grid, .projects-grid {
         flex-direction: column;
         align-items: center;
     }
