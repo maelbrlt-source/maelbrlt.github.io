@@ -2,19 +2,27 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centres d’intérêt – Mael BRAULT</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        @media (max-width: 768px) {
+            .grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
 <header>
-    <a href="./index.html">
-        <img src="./images/flashhh.jpg" class="logo">
-    </a>
+    <a href="./index.html"><img src="./images/flashhh.jpg" class="logo"></a>
     <h1>CENTRES D’INTÉRÊT</h1>
     <h2>Mael BRAULT</h2>
-
     <nav>
         <a href="./index.html">Accueil</a>
         <a href="./competences.html">Compétences</a>
@@ -27,20 +35,19 @@
 <main>
 <section class="section">
     <h1>Mes Passions</h1>
-
     <div class="grid">
         <div class="card">
-            <h2>🏸 Sport</h2>
+            <h2>🏸 Sport</h2><br>
             <p>Badminton (8 ans), Tennis, Tennis de table, Curling, Cyclisme.</p>
         </div>
 
         <div class="card">
-            <h2>🎵 Musique</h2>
+            <h2>🎵 Musique</h2><br>
             <p>Guitare électrique & folk, Piano, Cor d’harmonie.</p>
         </div>
 
         <div class="card">
-            <h2>🎮 Jeux vidéo</h2>
+            <h2>🎮 Jeux vidéo</h2><br>
             <p>Open world (GTA IV), jeux de course (Mario Kart).</p>
         </div>
     </div>
@@ -50,6 +57,5 @@
 <footer>
     <p class="copyright">© 2025 Mael BRAULT</p>
 </footer>
-
 </body>
 </html>

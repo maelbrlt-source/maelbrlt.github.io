@@ -2,19 +2,27 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compétences – Mael BRAULT</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        @media (max-width: 768px) {
+            .grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
 <header>
-    <a href="./index.html">
-        <img src="./images/flashhh.jpg" class="logo">
-    </a>
+    <a href="./index.html"><img src="./images/flashhh.jpg" class="logo"></a>
     <h1>COMPÉTENCES</h1>
     <h2>Mael BRAULT</h2>
-
     <nav>
         <a href="./index.html">Accueil</a>
         <a href="./competences.html" class="page_active">Compétences</a>
@@ -27,59 +35,22 @@
 <main>
 <section class="section">
     <h1>Mes Compétences</h1>
-
     <div class="grid">
-
         <div class="card">
             <h2>💻 Informatique</h2><br>
-
-            <div class="skill-line">
-                <span>HTML / CSS</span>
-                <span class="level">Intermédiaire</span>
-            </div>
-
-            <div class="skill-line">
-                <span>Python</span>
-                <span class="level">Bases solides</span>
-            </div>
-
-            <div class="skill-line">
-                <span>C++</span>
-                <span class="level">POO</span>
-            </div>
-
-            <div class="skill-line">
-                <span>Java</span>
-                <span class="level">POO</span>
-            </div>
-
-            <div class="tags">
-                <span>Linux</span>
-                <span>Git</span>
-                <span>GitHub / Gitlab</span>
-                <span>Oracle</span>
-            </div>
+            <div class="skill-line"><span>HTML / CSS</span><span class="level">Intermédiaire</span></div>
+            <div class="skill-line"><span>Python</span><span class="level">Bases solides</span></div>
+            <div class="skill-line"><span>C++</span><span class="level">POO</span></div>
+            <div class="skill-line"><span>Java</span><span class="level">POO</span></div>
+            <div class="tags"><span>Linux</span><span>Git</span><span>GitHub / Gitlab</span><span>Oracle</span></div>
         </div>
 
         <div class="card">
             <h2>🌍 Langues</h2><br>
-
-            <div class="skill-line">
-                <span>Français</span>
-                <span class="level">Natif</span>
-            </div>
-
-            <div class="skill-line">
-                <span>Anglais</span>
-                <span class="level">C1</span>
-            </div>
-
-            <div class="skill-line">
-                <span>Allemand</span>
-                <span class="level">B1/B2</span>
-            </div>
+            <div class="skill-line"><span>Français</span><span class="level">Natif</span></div>
+            <div class="skill-line"><span>Anglais</span><span class="level">C1</span></div>
+            <div class="skill-line"><span>Allemand</span><span class="level">B1/B2</span></div>
         </div>
-
     </div>
 </section>
 </main>
@@ -87,6 +58,5 @@
 <footer>
     <p class="copyright">© 2025 Mael BRAULT</p>
 </footer>
-
 </body>
 </html>

@@ -2,9 +2,23 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio – Mael BRAULT</title>
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./images/flashhh.jpg">
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -19,51 +33,50 @@
     <nav>
         <a href="./index.html" class="page_active">Accueil</a>
         <a href="./propos.html">À propos</a>
-
     </nav>
 </header>
 
 <main>
-    <section class="section">
-        <h1>Bienvenue sur mon Portfolio</h1>
+<section class="section">
+    <h1>Bienvenue sur mon Portfolio</h1>
 
-        <div class="grid">
-            <div class="card">
-                <h2>👤 Profil</h2>
-                <p>Brève présentation + quelques informations </p>
-                <br>
-                <a href="./propos.html">Voir plus →</a>
-            </div>
-
-            <div class="card">
-                <h2>💻 Compétences</h2>
-                <p>Langages, outils et technologies que je maîtrise.</p>
-                <br>
-                <a href="./competences.html">Voir plus →</a>
-            </div>
-
-            <div class="card">
-                <h2>🎓 Parcours</h2>
-                <p>Études, formations et expériences professionnelles.</p>
-                <br>
-                <a href="./parcours.html">Voir plus →</a>
-            </div>
-
-            <div class="card">
-                <h2>🚀 Projets</h2>
-                <p>Projets informatiques réalisés en autonomie ou en équipe.</p>
-                <br>
-                <a href="./projets.html">Voir plus →</a>
-            </div>
-
-            <div class="card">
-                <h2>🎯 Centres d’intérêt</h2>
-                <p>Sports, musique et passions personnelles.</p>
-                <br>
-                <a href="./interets.html">Voir plus →</a>
-            </div>
+    <div class="grid">
+        <div class="card">
+            <h2>👤 Profil</h2><br>
+            <p>Brève présentation + quelques informations </p>
+            <br>
+            <a href="./propos.html">Voir plus →</a>
         </div>
-    </section>
+
+        <div class="card">
+            <h2>💻 Compétences</h2><br>
+            <p>Langages, outils et technologies que je maîtrise.</p>
+            <br>
+            <a href="./competences.html">Voir plus →</a>
+        </div>
+
+        <div class="card">
+            <h2>🎓 Parcours</h2><br>
+            <p>Études, formations et expériences professionnelles.</p>
+            <br>
+            <a href="./parcours.html">Voir plus →</a>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Projets</h2><br>
+            <p>Projets informatiques réalisés en autonomie ou en équipe.</p>
+            <br>
+            <a href="./projets.html">Voir plus →</a>
+        </div>
+
+        <div class="card">
+            <h2>🎯 Centres d’intérêt</h2><br>
+            <p>Sports, musique et passions personnelles.</p>
+            <br>
+            <a href="./interets.html">Voir plus →</a>
+        </div>
+    </div>
+</section>
 </main>
 
 <footer>
@@ -92,73 +105,6 @@
     <p class="copyright">
         © 2025 Mael BRAULT
     </p>
-
-    <!-- CSS intégré -->
-    <style>
-        footer {
-            background: #0f172a;
-            color: #f1f5f9;
-            padding: 3rem 1rem;
-            margin-top: 4rem;
-            text-align: center;
-        }
-
-        .bas_de_page {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-            align-items: flex-start;
-            margin-bottom: 2rem;
-        }
-
-        .footer-info {
-            max-width: 300px;
-            text-align: center;
-        }
-
-        .footer-info h3 {
-            margin-bottom: 10px;
-        }
-
-        .footer-info p {
-            line-height: 1.4;
-        }
-
-        /* QR CODE avec fond blanc */
-        .qrcode-link img {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            display: block;
-            margin: 15px auto 0 auto;
-            border-radius: 10px;
-            background: white;
-            padding: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-            transition: transform 0.3s;
-        }
-
-        .qrcode-link img:hover {
-            transform: scale(1.05);
-        }
-
-        footer .copyright {
-            opacity: 0.7;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .qrcode-link img {
-                max-width: 150px;
-            }
-
-            .bas_de_page {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
 </footer>
 
 </body>

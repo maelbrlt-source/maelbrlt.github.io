@@ -2,10 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos – Mael BRAULT</title>
     <link rel="stylesheet" href="./styles/style.css">
     <style>
-        /* Styles spécifiques à cette page */
         .about-header {
             display: flex;
             align-items: center;
@@ -29,7 +29,7 @@
 
         .about-header h1 {
             font-size: 2.5rem;
-            color: #0f172a; /* main-color */
+            color: var(--main-color);
             margin: 0;
         }
 
@@ -46,7 +46,17 @@
 
         .about-text .fun {
             font-style: italic;
-            color: #4f46e5; /* accent */
+            color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .about-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-header h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -81,13 +91,13 @@
             Curieux, rigoureux et motivé, je souhaite développer mes compétences techniques à travers des projets concrets et des expériences enrichissantes.
         </p>
         <p class="fun">
-            PS : Je recherche activement une alternance à partir septembre 2026 pour une durée de deux ans en développement (Je suis ouvert à tout découvrir front-end, back-end, full stack, UI/UX Design)
+            PS : Je recherche activement une alternance à partir septembre 2026 pour une durée de deux ans en développement (front-end, back-end, full stack, UI/UX Design…)
         </p>
         <p class="fun">
-            1st année : 2 jours en entreprise / 3 jours à l'école
+            1ʳᵉ année : 2 jours en entreprise / 3 jours à l'école
         </p>
         <p class="fun">
-            2sd année : 3 jours en entreprise / 2 jours à l'école
+            2ᵉ année : 3 jours en entreprise / 2 jours à l'école
         </p>
     </div>
 
@@ -96,7 +106,6 @@
 
 <footer>
     <div class="bas_de_page">
-        <!-- Google Map -->
         <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.6705597880195!2d2.1679578119273812!3d48.711777410893404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8038e45f7c42fa25%3A0x9e4ad94895fa7e30!2zSVVUIGTigJlQcnNheQ!5e0!3m2!1sfr!2sfr!4v1772192465974!5m2!1sfr!2sfr"
             allowfullscreen=""
@@ -104,7 +113,6 @@
             style="border:0; border-radius:15px; width:350px; height:250px;">
         </iframe>
 
-        <!-- Info + QR Code -->
         <div class="footer-info">
             <h3>Me trouver</h3>
             <p>IUT d’Orsay – Université Paris-Saclay<br>
@@ -120,73 +128,6 @@
     <p class="copyright">
         © 2025 Mael BRAULT
     </p>
-
-    <!-- CSS intégré -->
-    <style>
-        footer {
-            background: #0f172a;
-            color: #f1f5f9;
-            padding: 3rem 1rem;
-            margin-top: 4rem;
-            text-align: center;
-        }
-
-        .bas_de_page {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-            align-items: flex-start;
-            margin-bottom: 2rem;
-        }
-
-        .footer-info {
-            max-width: 300px;
-            text-align: center;
-        }
-
-        .footer-info h3 {
-            margin-bottom: 10px;
-        }
-
-        .footer-info p {
-            line-height: 1.4;
-        }
-
-        /* QR CODE avec fond blanc */
-        .qrcode-link img {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            display: block;
-            margin: 15px auto 0 auto;
-            border-radius: 10px;
-            background: white;
-            padding: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-            transition: transform 0.3s;
-        }
-
-        .qrcode-link img:hover {
-            transform: scale(1.05);
-        }
-
-        footer .copyright {
-            opacity: 0.7;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .qrcode-link img {
-                max-width: 150px;
-            }
-
-            .bas_de_page {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
 </footer>
 
 </body>
