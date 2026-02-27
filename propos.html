@@ -4,13 +4,57 @@
     <meta charset="UTF-8">
     <title>À propos – Mael BRAULT</title>
     <link rel="stylesheet" href="./styles/style.css">
-</head>
+    <style>
+        /* Styles spécifiques à cette page */
+        .about-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 700px;
+            margin: 2rem auto;
+        }
 
+        .about-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .about-header img:hover {
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        .about-header h1 {
+            font-size: 2.5rem;
+            color: #0f172a; /* main-color */
+            margin: 0;
+        }
+
+        .about-text {
+            max-width: 700px;
+            margin: 1rem auto 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+        }
+
+        .about-text .fun {
+            font-style: italic;
+            color: #4f46e5; /* accent */
+        }
+    </style>
+</head>
 <body>
 
 <header>
     <a href="./index.html">
-        <img src="./images/flashhh.jpg" class="logo">
+        <img src="./images/flashhh.jpg" class="logo" alt="Logo Portfolio">
     </a>
     <h1>À PROPOS</h1>
     <h2>Mael BRAULT</h2>
@@ -18,37 +62,131 @@
     <nav>
         <a href="./index.html">Accueil</a>
         <a href="./propos.html" class="page_active">À propos</a>
-        <a href="./competences.html">Compétences</a>
-        <a href="./parcours.html">Parcours</a>
-        <a href="./projets.html">Projets</a>
-        <a href="./interets.html">Centres d’intérêt</a>
     </nav>
 </header>
 
 <main>
 <section class="section">
-    <h1>À propos de moi</h1>
 
-    <div class="card" style="max-width:700px; margin:auto;">
+    <div class="about-header">
+        <img src="./images/mael.jpg" alt="Photo de Mael">
+        <h1>Mael BRAULT</h1>
+    </div>
+
+    <div class="about-text">
         <p>
-            Étudiant en BUT Informatique à l’IUT d’Orsay,
-            passionné par le développement, les mathématiques
-            et les nouvelles technologies.
+            Étudiant en BUT Informatique à l’IUT d’Orsay, passionné par le développement, les mathématiques et les nouvelles technologies.
         </p>
-
-        <br>
-
         <p>
-            Curieux, rigoureux et motivé, je souhaite développer
-            mes compétences techniques à travers des projets concrets
-            et des expériences professionnelles enrichissantes.
+            Curieux, rigoureux et motivé, je souhaite développer mes compétences techniques à travers des projets concrets et des expériences enrichissantes.
+        </p>
+        <p class="fun">
+            PS : Je recherche activement une alternance à partir septembre 2026 pour une durée de deux ans en développement (Je suis ouvert à tout découvrir front-end, back-end, full stack, UI/UX Design)
+        </p>
+        <p class="fun">
+            1st année : 2 jours en entreprise / 3 jours à l'école
+        </p>
+        <p class="fun">
+            2sd année : 3 jours en entreprise / 2 jours à l'école
         </p>
     </div>
+
 </section>
 </main>
 
 <footer>
-    <p class="copyright">© 2025 Mael BRAULT</p>
+    <div class="bas_de_page">
+        <!-- Google Map -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.6705597880195!2d2.1679578119273812!3d48.711777410893404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8038e45f7c42fa25%3A0x9e4ad94895fa7e30!2zSVVUIGTigJlQcnNheQ!5e0!3m2!1sfr!2sfr!4v1772192465974!5m2!1sfr!2sfr"
+            allowfullscreen=""
+            loading="lazy"
+            style="border:0; border-radius:15px; width:350px; height:250px;">
+        </iframe>
+
+        <!-- Info + QR Code -->
+        <div class="footer-info">
+            <h3>Me trouver</h3>
+            <p>IUT d’Orsay – Université Paris-Saclay<br>
+               13 Av. des Sciences, 91190 Gif-sur-Yvette
+            </p>
+
+            <a href="https://linktr.ee/maelbrlt" target="_blank" class="qrcode-link">
+                <img src="./images/maelbrlt.png" alt="Mon QR code">
+            </a>
+        </div>
+    </div>
+
+    <p class="copyright">
+        © 2025 Mael BRAULT
+    </p>
+
+    <!-- CSS intégré -->
+    <style>
+        footer {
+            background: #0f172a;
+            color: #f1f5f9;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .bas_de_page {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .footer-info {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .footer-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-info p {
+            line-height: 1.4;
+        }
+
+        /* QR CODE avec fond blanc */
+        .qrcode-link img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 15px auto 0 auto;
+            border-radius: 10px;
+            background: white;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .qrcode-link img:hover {
+            transform: scale(1.05);
+        }
+
+        footer .copyright {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .qrcode-link img {
+                max-width: 150px;
+            }
+
+            .bas_de_page {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </footer>
 
 </body>
