@@ -13,8 +13,9 @@
     --accent-light: #6366f1;
     --bg: #f8fafc;
     --card-bg: #ffffff;
-    --text-dark: #1e293b;
-    --text-light: #f1f5f9;
+    --text-sombre: #000000;     /*header*/
+    --text-dark: #1e293b;       /*main*/
+    --text-light: #ffffff;      /*footer*/
     --radius: 20px;
 }
 
@@ -28,10 +29,16 @@ body {
 /* HEADER */
 header {
     background: var(--main-color);
-    color: var(--text-light);
+    color: var(--text-sombre);
     padding: 2rem 1rem;
     text-align: center;
     position: relative;
+
+    /* IMAGE DE FOND */
+    background-image: url('../images/background.jpg'); /* chemin relatif depuis style.css */
+    background-size: cover;       /* l'image couvre tout le header */
+    background-position: center;  /* recentre l'image */
+    background-repeat: no-repeat; /* pas de répétition */
 }
 .logo {
     height: 65px;
@@ -41,10 +48,11 @@ header {
     border-radius: 50%;
 }
 header h1 {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     letter-spacing: 2px;
 }
 header h2 {
+    font-size: 2rem;
     opacity: 0.8;
     margin-top: 5px;
 }
@@ -55,13 +63,14 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: var(--text-light);
-    border: 1px solid var(--text-light);
+    color: var(--text-sombre);
+    border: 1px solid var(--text-sombre);
     padding: 8px 18px;
     margin: 0 8px;
     border-radius: 50px;
     transition: 0.3s;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    background: rgba(220, 209, 209, 0.49); /* noir 40% transparent */
 }
 nav a:hover, nav a.page_active {
     background: var(--accent);
