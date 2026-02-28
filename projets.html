@@ -14,6 +14,7 @@
         }
     </style>
 </head>
+
 <body>
 <header>
     <a href="./index.html"><img src="./images/flashhh.jpg" class="logo"></a>
@@ -30,24 +31,37 @@
 
 <main>
 <section class="section">
-    <h1>Mes Projets</h1>
+    <h1>Mes Projets </h1>
     <div class="projects-grid">
         <div class="project">
-            <h2>🎮 Jeu vidéo 2D – C++</h2><br>
+            <h2>🎮 Jeu vidéo 2D – C++</h2>
+            <video class="project-video"
+                src="./images/jeuvideo.mp4"
+                muted
+                loop
+                preload="metadata">
+            </video>
             <p>Projet scolaire avec programmation orientée objet.</p>
             <div class="tags"><span>C++</span><span>POO</span><span>GitLab</span></div>
         </div>
 
         <div class="project">
-            <h2>🌐 Site web – HTML/CSS</h2><br>
-            <p>Création d’un site d’agence de voyage interactif (présentation + réservation).</p>
+            <h2>🌐 Site web – HTML/CSS</h2>
+            <video class="project-video"
+                src="./images/website.mp4"
+                muted
+                loop
+                preload="metadata">
+            </video>
+            <p>Projet scolaire de création d’un site d’agence de voyage interactif.</p>
             <div class="tags"><span>HTML</span><span>CSS</span><span>VS Code</span></div>
         </div>
 
         <div class="project">
-            <h2>🗄 Base de données – SQL</h2><br>
-            <p>Conception d’une base relationnelle et requêtes complexes.</p>
-            <div class="tags"><span>SQL</span><span>SQLite</span></div>
+            <h2>🗄 Base de données – SQL</h2>
+            <img src="./images/Basedonnee.png" alt="Capture du script" class="project-img">
+            <p>Conception d’une base relationnelle et requêtes complexes d'une pharmacie d'hopital.</p>
+            <div class="tags"><span>SQL</span><span>SQLite</span><span>Oracle</span></div>
         </div>
     </div>
 </section>
@@ -56,5 +70,19 @@
 <footer>
     <p class="copyright">© 2025 Mael BRAULT</p>
 </footer>
+<script> /*pour l'affichage de la vidéo en boucle*/
+document.querySelectorAll('.project-video').forEach(video => {
+
+    video.addEventListener('mouseenter', () => {
+        video.play();
+    });
+
+    video.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0; // repart au début
+    });
+
+});
+</script>
 </body>
 </html>
