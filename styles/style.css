@@ -264,7 +264,7 @@ footer .qrcode-link img {
 }
 
 .footer-link {
-    color: inherit;
+    color: var(--text-light);
     text-decoration: none;
     margin-left: 5px;
     transition: 0.3s;
