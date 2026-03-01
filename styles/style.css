@@ -263,6 +263,18 @@ footer .qrcode-link img {
     padding: 10px;
 }
 
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
