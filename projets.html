@@ -12,12 +12,21 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Ajustement taille des cartes pour Raspberry Pi et SAE */
+        .projects-grid .project img,
+        .projects-grid .project video {
+            width: 100%;
+            max-height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 0.8rem;
+        }
     </style>
 </head>
 
 <body>
 <header>
-    <a href="./index.html"><img src="./images/MBlogo2.png" class="logo"></a>
+    <a href="./index.html"><img src="./images/MBlogo2.png" class="logo" alt="Logo"></a>
     <h1>PROJETS</h1>
     <h2>Mael BRAULT</h2>
     <nav>
@@ -31,8 +40,10 @@
 
 <main>
 <section class="section">
-    <h1>Mes Projets </h1>
+    <h1>Mes Projets</h1>
     <div class="projects-grid">
+
+        <!-- Projet 1 : Jeu vidéo 2D -->
         <div class="project">
             <h2>Jeu vidéo 2D – C++</h2>
             <video class="project-video"
@@ -41,10 +52,11 @@
                 loop
                 preload="metadata">
             </video>
-            <p>Projet scolaire avec programmation orientée objet. Jeu en 2D (ramasser toutes les pièces sans se faire toucher).</p>
+            <p>Projet scolaire avec programmation orientée objet. Jeu en 2D : ramasser toutes les pièces sans se faire toucher.</p>
             <div class="tags"><span>C++</span><span>POO</span><span>GitLab</span></div>
         </div>
 
+        <!-- Projet 2 : Site web HTML/CSS -->
         <div class="project">
             <h2>Site web – HTML/CSS</h2>
             <video class="project-video"
@@ -53,16 +65,35 @@
                 loop
                 preload="metadata">
             </video>
-            <p>Projet scolaire de création d’un site d’agence de voyage interactif.</p>
+            <p>Projet scolaire de création d’un site interactif pour une agence de voyage.</p>
             <div class="tags"><span>HTML</span><span>CSS</span><span>VS Code</span></div>
         </div>
 
+        <!-- Projet 3 : Base de données SQL -->
         <div class="project">
             <h2>Base de données – SQL</h2>
             <img src="./images/Basedonnee.png" alt="Capture du script" class="project-img">
-            <p>Conception d’une base relationnelle et requêtes complexes d'une pharmacie d'hopital.</p>
+            <p>Conception d’une base relationnelle et requêtes complexes pour une pharmacie d’hôpital.</p>
             <div class="tags"><span>SQL</span><span>SQLite</span><span>Oracle</span></div>
         </div>
+
+        <!-- Projet 4 : Installation poste de travail Raspberry Pi -->
+        <div class="project">
+            <h2>Installation poste de travail – Raspberry Pi</h2>
+            <img src="./images/raspberrypi.png" alt="Installation Raspberry Pi" class="project-img">
+            <p>Mise en place de postes de travail sur Raspberry Pi 400, configuration SSH, gestion des utilisateurs, droits sudo.</p>
+            <div class="tags"><span>Raspberry Pi</span><span>Linux</span><span>SSH</span><span>Apache</span><span>MariaDB</span></div>
+        </div>
+
+        <!-- Projet 5 : Projet SAE S2 2025-2026 (En cours) -->
+        <div class="project">
+            <h2>Développement d'une application - En cours...</h2>
+            <img src="./images/sae.png" alt="Projet SAE en cours" class="project-img">
+            <p>Projet scolaire de développement d'une application de gestion de collection de médias (films & séries) inspirée de Letterboxd. </p>
+            <div class="tags"><span>Java</span><span>POO</span><span>IHM</span><span>Qualité</span><span>Git</span></div>
+            
+        </div>
+
     </div>
 </section>
 </main>
@@ -72,19 +103,13 @@
     <a href="./mentions-legales.html" class="footer-link">Mentions légales</a>
     </p>
 </footer>
+
 <script> 
 document.querySelectorAll('.project-video').forEach(video => {
-
-    video.addEventListener('mouseenter', () => {
-        video.play();
-    });
-
-    video.addEventListener('mouseleave', () => {
-        video.pause();
-        video.currentTime = 0; // repart au début
-    });
-
+    video.addEventListener('mouseenter', () => video.play());
+    video.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
 });
 </script>
+
 </body>
 </html>

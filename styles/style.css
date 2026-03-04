@@ -113,6 +113,7 @@ main {
     transform: translateY(-6px);
 }
 
+
 /* ================= COMPETENCES ================= */
 .skill-line {
     display: flex;
@@ -148,6 +149,22 @@ main {
 }
 
 .tags span:hover {
+    background: var(--accent);
+}
+
+.tags a {
+    display: inline-block;
+    background: var(--main-color);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    margin: 5px 5px 0 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.tags a:hover {
     background: var(--accent);
 }
 
