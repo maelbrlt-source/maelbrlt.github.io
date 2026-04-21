@@ -228,6 +228,44 @@ main {
     border-left: 3px solid var(--accent);
 }
 
+/* ================= MENTIONS LEGALES ================= */
+
+.legal-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.7;
+}
+
+.legal-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.legal-container h2 {
+    margin-top: 2rem;
+    color: var(--accent);
+}
+
+.legal-container p {
+    margin-bottom: 1rem;
+}
+
+.legal-container ul {
+    padding-left: 20px;
+}
+
+.legal-container li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .legal-container {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+}
+
 /* ================= BOUTONS ================= */
 .btn-nav {
     display: inline-block;
