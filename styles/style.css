@@ -266,6 +266,55 @@ main {
     }
 }
 
+/* ================= AVIATION ================= */
+
+.aviation-section {
+    margin-top: 3rem;
+}
+
+.aviation-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.aviation-card h2 {
+    margin-bottom: 1rem;
+}
+
+.aviation-card p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.aviation-media {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.aviation-video {
+    width: 450px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .aviation-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aviation-video {
+        width: 100%;
+    }
+}
+
 /* ================= BOUTONS ================= */
 .btn-nav {
     display: inline-block;
